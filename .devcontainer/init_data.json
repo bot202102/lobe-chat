@@ -1,0 +1,63 @@
+{
+  "applications": [
+    {
+      "owner": "admin",
+      "name": "lobechat",
+      "createdTime": "2022-01-01T00:00:00Z",
+      "displayName": "LobeChat",
+      "logo": "https://lobehub.com/icon-192x192.png",
+      "homepageUrl": "http://192.168.7.196:3010",
+      "description": "LobeChat Application",
+      "organization": "built-in",
+      "cert": "",
+      "enablePassword": true,
+      "enableSignUp": true,
+      "enableSigninSession": true,
+      "enableAutoSignin": false,
+      "enableCodeSignin": true,
+      "enableSamlCompress": false,
+      "enableWebAuthn": false,
+      "enableLinkWithEmail": false,
+      "clientId": "a387a4892ee19b1a2249",
+      "clientSecret": "dbf205949d704de81b0b5b3603174e23fbecc354",
+      "redirectUris": ["http://192.168.7.196:3010/api/auth/callback/casdoor"],
+      "tokenFormat": "",
+      "expireInHours": 168,
+      "refreshExpireInHours": 168,
+      "signupUrl": "",
+      "signinUrl": "",
+      "forgetUrl": "",
+      "affiliationUrl": "",
+      "termsOfUse": "",
+      "signupHtml": "",
+      "signinHtml": "",
+      "themeData": null,
+      "formCss": "",
+      "formCssMobile": "",
+      "formOffset": 2,
+      "formSideHtml": "",
+      "formBackgroundUrl": ""
+    }
+  ],
+  "organizations": [
+    {
+      "owner": "admin",
+      "name": "built-in",
+      "createdTime": "2022-01-01T00:00:00Z",
+      "displayName": "Built-in Organization",
+      "websiteUrl": "https://lobehub.com",
+      "favicon": "https://lobehub.com/icon-192x192.png",
+      "passwordType": "plain",
+      "enablePassword": true,
+      "enableSignUp": true,
+      "enableSigninSession": true,
+      "enableAutoSignin": false,
+      "enableCodeSignin": true,
+      "enableSamlCompress": false,
+      "enableWebAuthn": false,
+      "enableLinkWithEmail": false,
+      "expireInYears": 1,
+      "isProfilePublic": false
+    }
+  ]
+}

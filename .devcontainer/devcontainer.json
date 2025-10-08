@@ -1,7 +1,33 @@
 {
-  "features": {
-    "ghcr.io/devcontainer-community/devcontainer-features/bun.sh:1": {},
-    "ghcr.io/devcontainers/features/docker-outside-of-docker:1": {}
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-vscode.vscode-typescript-next",
+        "bradlc.vscode-tailwindcss",
+        "esbenp.prettier-vscode",
+        "ms-vscode.vscode-json"
+      ],
+      "settings": {
+        "typescript.preferences.importModuleSpecifier": "relative",
+        "editor.formatOnSave": true,
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+      }
+    }
   },
-  "image": "mcr.microsoft.com/devcontainers/typescript-node"
+
+  "dockerComposeFile": "docker-compose.yml",
+  "forwardPorts": [3010, 5432, 9000, 9001, 8001, 8080],
+
+  "mounts": [
+    "source=${localWorkspaceFolder}/.devcontainer/init_data.json,target=/workspace/.devcontainer/init_data.json,type=bind,consistency=cached"
+  ],
+
+  "name": "LobeChat Development",
+  "postCreateCommand": "bash .devcontainer/scripts/post-create.sh",
+
+  "remoteEnv": {
+    "CI": "true"
+  },
+  "service": "lobe-dev",
+  "workspaceFolder": "/workspace"
 }
