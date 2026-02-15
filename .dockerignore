@@ -7,3 +7,13 @@ npm-debug.log
 .github
 *.md
 .env.example
+# Ignore node_modules recursively (handles nested workspaces)
+**/node_modules/**
+
+# Ignore pnpm virtual store and metadata that can cause Windows access errors
+.pnpm
+**/.pnpm/**
+**/.ignored/**
+
+# Common caches
+**/.cache/**
